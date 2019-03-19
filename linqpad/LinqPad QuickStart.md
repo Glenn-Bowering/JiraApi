@@ -55,3 +55,5 @@ Once you have a list of issues you can then perform other manipulations in order
 The code below show how you can filter a list of issues that contain the word 'update'. An example is given showing how a linq query can be used as well as a foreach loop.
 
 ![](img/query_code.png)
+
+Finally, LinqPad adds the `Dump()` method to every object. The `Dump()` displays the state (contents) of an object in LinqPad's viewer pane. Calling dump on a list of issues will display the whole list.
