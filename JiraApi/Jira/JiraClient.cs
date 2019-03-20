@@ -37,7 +37,7 @@ namespace Jira
             results = MapToSimpleModel(queryResult);
 
             return results;
-        }
+        }//jiraIssus.Dump();
 
         public List<Jira.Issue> LoadMultipleAtlassianJsonFiles(string sourceDirectory)
         {
@@ -76,8 +76,6 @@ namespace Jira
             int total;
             do
             {
-                Console.Out.WriteLine(request);
-
                 var jsonResponse = api.ExecuteRequest(request);
 
                 var responseCollection = jsonTools.ConvertToAtlassianObjects(jsonResponse);
@@ -151,7 +149,6 @@ namespace Jira
             foreach (Api.ObjectModel.Issue issue in issueList)
             {
                 issues.Add(issueMapper.Map(issue));
-                Console.Out.WriteLine(issue.Key);
             }
             
 
