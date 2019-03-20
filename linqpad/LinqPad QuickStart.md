@@ -56,4 +56,15 @@ The code below show how you can filter a list of issues that contain the word 'u
 
 ![](img/query_code.png)
 
-Finally, LinqPad adds the `Dump()` method to every object. The `Dump()` displays the state (contents) of an object in LinqPad's viewer pane. Calling dump on a list of issues will display the whole list.
+Finally, LinqPad adds the `Dump()` method to every object. The `Dump()` displays the state (contents) of an object in LinqPad's viewer pane. Calling dump on a list of issues will display the whole list. The query above returns two objects which are then dumped (see below).
+
+![](img/dump_output.png)
+
+
+If you're using Linq you can select fewer fields in the returned object. 
+
+![](img/linq_with_projection.png)
+
+This makes the data returend more manageable.
+
+![](img/dump_output_reduced.png)
